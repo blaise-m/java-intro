@@ -1,4 +1,4 @@
-package com.falxjava;
+package com.java;
 
 import java.awt.*;
 import java.text.NumberFormat;
