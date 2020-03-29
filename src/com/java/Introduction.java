@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
-public class IntroSummary {
-    public static void runExamples() {
+public class Introduction {
+    public static void introductionSummary() {
         System.out.println("Hello World");
 
         // Primitive types
