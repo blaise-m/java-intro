@@ -65,10 +65,27 @@ public class ControlFlow {
         boolean isEligible = checkLoanEligibility();
 
         if (isEligible) {
-            System.out.println("\nAm I eligible: Yes");
+            System.out.println("\n1. Am I eligible: Yes");
         }
         else {
-            System.out.println("\nAm I eligible: No");
+            System.out.println("\n1. Am I eligible: No");
+        }
+
+        // The ternary operator
+        // Used to simplify the if statement
+        String doesQualify = (isEligible)? "Yes": "No";
+        System.out.println("2. Am I eligible: " + doesQualify);
+
+        // Switch statement
+        String role = "admin";
+
+        switch (role) {
+            case "admin":
+                System.out.println("\nYou're an admin");
+            case "moderator":
+                System.out.println("You're a moderator");
+            default:
+                System.out.println("You're a guest");
         }
     }
 
