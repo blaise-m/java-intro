@@ -6,6 +6,7 @@ public class Main {
         // ControlFlow controlFlow = new ControlFlow();
         // controlFlow.controlFlowSummary();
         // MortgageCalc.computePayment();
-        FizzBuzz.fizzBuzz();
+        // FizzBuzz.fizzBuzz();
+        JavaLoops.loopsSummary();
     }
 }
