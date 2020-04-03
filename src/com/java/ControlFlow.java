@@ -73,19 +73,24 @@ public class ControlFlow {
 
         // The ternary operator
         // Used to simplify the if statement
+        // Same as JS ternary operator
         String doesQualify = (isEligible)? "Yes": "No";
         System.out.println("2. Am I eligible: " + doesQualify);
 
         // Switch statement
-        String role = "admin";
+        System.out.print("\nPlease enter your role: ");
+        Scanner scanner = new Scanner(System.in);
+        String role = scanner.next().trim().toLowerCase();
 
         switch (role) {
             case "admin":
-                System.out.println("\nYou're an admin");
+                System.out.println("\nProceed to http://admin.com");
+                break;
             case "moderator":
-                System.out.println("You're a moderator");
+                System.out.println("Proceed to http://moderator.com");
+                break;
             default:
-                System.out.println("You're a guest");
+                System.out.println("Proceed and browser as a guest at http://home.com");
         }
     }
 
